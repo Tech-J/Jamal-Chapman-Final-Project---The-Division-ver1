@@ -130,7 +130,7 @@ ul#menu li
 {
 	display: inline;
 	color: orange;
-	padding: 0px 50px 0px 50px;
+	padding: 0px 40px 0px 40px;
 }
 a
 {
@@ -172,11 +172,11 @@ ul
 	
 	background-color: black;
 	color: orange;
-	text-align: right;
 	width: 100%;
 	bottom: 0px;
 	position: fixed;
-	height: 65px;
+	height: 50px;
+	text-align: right;
 
 }
 #TW
@@ -383,4 +383,5 @@ mark
 	#line
 	{
 		line-height: 50px;
+		position: absolute;
 	}
