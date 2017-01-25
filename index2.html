@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class="landing">
+<head>
+	<title></title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<style type="text/css">
+
+	input
+	{
+		width: 100px;
+	}
+	input[type=button]
+	{
+	color: white;
+	padding: 25px;
+	font-size:20pt;
+	display: none;
+	width: 200px;
+	}
+	button
+	{
+		margin-top: 350px;
+		width: 100px;
+		background-color: rgb(236,107,51);
+	}
+	input[type=button]:hover
+	{
+	background-color:grey;
+	border:dotted;
+	}
+
+	#fsubmit
+	{
+	text-align: center;
+	}
+	#sub
+	{
+		color: rgb(236,107,51);
+		font-size: 25px;
+		padding:10px;
+	}
+</style>
+</head>
+<body>
+			<div id="sub">
+				<center>
+				Month: <input id="a" type="number" min="1" max="12" required>
+				Day: <input id="b" type="number" min="1" max="31" required>
+				Year: <input id="c" type="number" min="1950" max="2017" required>
+				<button  onclick = "submit()">Submit</button>
+				<br><br>
+				<div>
+				<a href="index.html"><input id="button1" type="button" name="submit" value="submit"></a>
+				</div>
+				</center>
+			</div>
+<body>
+
+<script type="text/javascript">
+
+var month2, day2, year2;
+
+function submit()
+{
+	setValues()
+	var a,b,c,d;
+	a = new Date();
+	var month = a.getMonth()+1;
+	var day = a.getDate();
+	var year = a.getFullYear();
+
+
+	if(month2==0 && day2==0 && year2==0)
+	{
+		alert("Try Again");
+	}	
+	else if (month2 <= month && day2 <= day && year2 <= (year-17))
+	{	
+		alert("Right");
+		document.getElementById("button1").style.display = 'block' ;
+	}
+	else if(year2<(year-17))
+	{
+		alert("Right");
+		document.getElementById("button1").style.display = 'block' ;
+	}
+	else
+	{
+		alert("Try Again");
+	}
+	b=document.getElementById("a");
+	c=document.getElementById("b");
+	d=document.getElementById("c");
+	b.value="";
+	c.value="";
+	d.value="";
+}
+function setValues()
+{
+	month2=Number(document.getElementById("a").value);
+	day2=Number(document.getElementById("b").value);
+	year2=Number(document.getElementById("c").value);
+}
+</script>
+</body>
+</html>

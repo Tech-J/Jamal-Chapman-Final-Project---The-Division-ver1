@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css?family=Plaster');
+html
+{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+body
+{
+	font-family: Helvetica, Arial, sans-serif;
+	margin:0;
+	width:  100%;
+	height: 100%;
+	color: white;
+}	
+html.index
+{
+	background-image: url("BackgroundIX.jpg");
+	background-position: 0px 175px;
+}
+html.about
+{
+	background-image: url("BackgroundAB.jpg");
+	background-position: 0px 0px;
+}
+html.map
+{
+	background-image: url("BackgroundMP.jpg");
+	background-position: 0px 90px;
+}
+html.galleries
+{
+	background-image: url("BackgroundGL.jpg");
+	background-position: 0px 25px;
+	color: black;
+}
+html.faq
+{
+	background-image: url("BackgroundFQ.jpg");
+	background-position: 0px 50px;
+	color: black;
+}
+html.socialmedia
+{
+	background-image: url("BackgroundSM.jpg");
+	background-position: 0px 0px;
+	color: black;
+}
+html.contact
+{
+	background-image: url("BackgroundCT.jpg");
+	background-position: 0px 25px;
+	color: black;
+}
+html.landing
+{
+	background-image: url("BackgroundCD.jpg");
+	background-position: 0px 0px;
+	color: black;
+}
+h1
+{
+	color: rgb(236,107,51);
+	font-family: 'Plaster', cursive;
+	font-size: 45px;
+}	
+h2	
+{	
+	padding-top: 15px;
+	font-size: 30px;
+}
+h3	
+{
+	color: rgb(236,107,51);
+	font-size: 20px;
+}
+p
+{
+	text-align: justify;
+	line-height: 25px;
+	word-spacing: 5px;
+	font-size: 20px;
+}
+#container
+{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 5;
+}
+#header
+{
+	background-color: white;
+	color: white;
+	text-align: center;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	height: 130px;
+	z-index: 1;
+}
+#head
+{
+	width: 200px;
+    height: 130px;
+    position: relative;
+    animation: mymove 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes mymove 
+{
+    0% {left: -15%;}
+    50%{left: 45%;}
+    100%{left: 105%;}
+}
+#nav
+{
+	width: 100%;
+	display: inline;
+	background-color: black;
+	text-align: center;
+	position: fixed;
+	top: 130px;
+	z-index: 1;	
+	height: 55px;
+	line-height: 50px;
+	font-size: 20px;
+}
+ul#menu li
+{
+	display: inline;
+	color: orange;
+	padding: 0px 50px 0px 50px;
+}
+a
+{
+	text-decoration: none;
+}
+a:hover
+{
+background-color: white;
+padding-top: 15px;
+padding-bottom: 17px;
+}
+ul
+{
+	background-color: black;
+	margin-top:2px; 
+	margin-bottom: 2px;
+}
+
+#content
+{
+	padding-top: 130px;
+}
+#main
+{
+	margin-left: 60px;
+	margin-right: 45px;
+	margin-top: 100px;
+	width: 85%;
+	background-color: rgba(0,0,0,.5);
+	height: 100%;
+	padding-bottom: 100px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 10px;
+	z-index: 1;
+}
+#footer
+{
+	
+	background-color: black;
+	color: orange;
+	text-align: right;
+	width: 100%;
+	bottom: 0px;
+	position: fixed;
+	height: 65px;
+
+}
+#TW
+{
+	margin-right: 15px;
+	display: inline;
+	border: solid;
+	border-color: rgb(65,157,229);
+	border-top-width: 540px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    background-color: rgb(65,157,229);
+    border-radius: 20px;
+}
+#FB
+{
+	display: inline;
+	border: 10px solid;
+	border-color: rgb(59, 89, 152);
+	border-top-width: 540px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    background-color: rgb(59, 89, 152);
+    border-radius: 20px;
+}
+#xbox
+{
+	display: inline-block;
+	margin-left:  300px;
+	padding-top: 25px;
+	border-style: solid;
+	height: 450px;
+	width: 450px;
+}
+#ps4
+{
+	display: inline-block;
+	padding-top: 25px;
+	border-style: solid;
+	height: 450px;
+	width: 450px;	
+}
+#buttonXBOX
+{
+	padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    border: 0px;
+	background-color: rgb(236,107,51);
+    color: white;
+    font-size: 20px;
+    border-radius: 15%;
+}
+#buttonPS
+{
+	padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    border: 0px;
+	background-color: rgb(236,107,51);
+    color: white;
+    font-size: 20px;
+    border-radius: 15%;
+}
+#buttonPS:hover
+{
+background-color: rgb(54,109,5);
+cursor: pointer;
+}
+#buttonXBOX:hover
+{
+background-color: rgb(31,106,176);
+cursor: pointer;
+}
+#trailer
+{	
+	margin-top: 45px;
+	width:60%;
+	border-style: solid;
+	border-bottom-width: 40px;
+    border-left-width: 40px;
+    border-top-width: 40px;
+    border-right-width: 40px;
+	border-top-color: rgb(236,107,51);
+	border-left-color: black;
+	border-bottom-color: rgb(236,107,51);
+	border-right-color: black;
+}
+#trailer2
+{	
+	margin-top: 45px;
+	width:40%;
+	border-style: solid;
+	border-bottom-width: 40px;
+    border-left-width: 40px;
+    border-top-width: 40px;
+    border-right-width: 40px;
+	border-top-color: rgb(236,107,51);
+	border-left-color: black;
+	border-bottom-color: rgb(236,107,51);
+	border-right-color: black;
+	display: inline-block;
+}
+.images
+	{	
+		
+		height: 500px;
+		width: 700px;
+		transition: 3s;
+		display: block;
+    	margin: 0 auto;
+    	border-radius: 14%;
+	}
+.images2
+	{	
+		
+		height: 200px;
+		width: 300px;
+		transition: 3s;
+		display: block;
+    	margin: 0 auto;
+    	border-radius: 10%;
+	}
+#slideshow
+	{	
+		margin-top: 50px;
+		border-style: solid;
+		height: 500px;
+		width: 700px;
+		background-color: rgba(255,255,255,.05);
+		margin-left: 20px;
+    	border-left-width: 50px;
+    	border-right-width: 50px;
+    	border-top-width: 50px;
+    	border-bottom-width: 50px;
+    	border-top-color: rgba(236,107,51,.5);
+		border-left-color: rgba(0,0,0,.5);
+		border-bottom-color: rgba(236,107,51,.5);
+		border-right-color: rgba(0,0,0,.5);	
+		border-radius: 20%;
+	}
+#slideshow2
+	{	
+		margin-top: 50px;
+		border-style: solid;
+		height: 200px;
+		width: 300px;
+		background-color: rgba(255,255,255,.05);
+		margin-left: 20px;
+    	border-left-width: 50px;
+    	border-right-width: 50px;
+    	border-top-width: 50px;
+    	border-bottom-width: 50px;
+    	border-top-color: rgba(236,107,51,.5);
+		border-left-color: rgba(0,0,0,.5);
+		border-bottom-color: rgba(236,107,51,.5);
+		border-right-color: rgba(0,0,0,.5);	
+		border-radius: 22%;
+		display: inline-block;
+	}
+button
+	{
+		font-size: 20px;
+		display: inline-block;
+		width: 50px;
+	}
+button:hover
+	{
+		background-color: white;
+		color: orange;
+	}
+button.back
+	{
+		float: left;
+		position: relative;
+		vertical-align: middle;
+		top: -300px;
+		left: -50px;
+		z-index: 0;
+		vertical-align: middle;
+		line-height: 100px;
+
+	}
+button.next
+	{
+		float: right;
+		position: relative;
+		vertical-align: middle;
+		top: -300px;
+		right: -50px;
+		z-index: 0;
+		vertical-align: middle;
+		line-height: 100px;
+	}
+mark
+	{
+		background-color: white;
+		padding-top: 15px;
+	padding-bottom: 17px;
+
+	}
+	#line
+	{
+		line-height: 50px;
+	}
