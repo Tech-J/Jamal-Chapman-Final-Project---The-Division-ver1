@@ -37,7 +37,7 @@ html.galleries
 html.faq
 {
 	background-image: url("BackgroundFQ.jpg");
-	background-position: 0px 50px;
+	background-position: 0px 150px;
 	color: black;
 }
 html.socialmedia
@@ -49,7 +49,7 @@ html.socialmedia
 html.contact
 {
 	background-image: url("BackgroundCT.jpg");
-	background-position: 0px 25px;
+	background-position: 0px 125px;
 	color: black;
 }
 html.landing
