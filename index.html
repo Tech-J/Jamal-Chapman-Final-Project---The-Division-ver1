@@ -11,11 +11,12 @@
 	}
 	input[type=button]
 	{
-	color: white;
+	color: rgb(236,107,51);
 	padding: 25px;
 	font-size:20pt;
 	display: none;
 	width: 200px;
+	height: 100px;
 	}
 	button
 	{
@@ -53,7 +54,7 @@
 				<button  onclick = "submit()">Submit</button>
 				<br><br>
 				<div>
-				<a href="index.html"><input id="button1" type="button" name="submit" value="submit"></a>
+				<a href="Home.html"><input id="button1" type="button" name="submit" value="submit"></a>
 				</div>
 				</center>
 			</div>
@@ -76,6 +77,7 @@ function submit()
 	if(month2==0 && day2==0 && year2==0)
 	{
 		alert("Try Again");
+		document.getElementById("button1").style.display = 'none' ;
 	}	
 	else if (month2 <= month && day2 <= day && year2 <= (year-17))
 	{	
@@ -90,6 +92,7 @@ function submit()
 	else
 	{
 		alert("Try Again");
+		document.getElementById("button1").style.display = 'none' ;
 	}
 	b=document.getElementById("a");
 	c=document.getElementById("b");
