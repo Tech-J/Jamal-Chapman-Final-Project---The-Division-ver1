@@ -51,7 +51,7 @@
 				Month: <input id="a" type="number" min="1" max="12" required>
 				Day: <input id="b" type="number" min="1" max="31" required>
 				Year: <input id="c" type="number" min="1950" max="2017" required>
-				<button  onclick = "submit()">Submit</button>
+				<button  onclick = "submit()">Enter</button>
 				<br><br>
 				<div>
 				<a href="Home.html"><input id="button1" type="button" name="submit" value="submit"></a>
@@ -74,12 +74,7 @@ function submit()
 	var year = a.getFullYear();
 
 
-	if(month2==0 && day2==0 && year2==0)
-	{
-		alert("Try Again");
-		document.getElementById("button1").style.display = 'none' ;
-	}	
-	else if (month2 <= month && day2 <= day && year2 <= (year-17))
+	if (month2 <= month && day2 <= day && year2 <= (year-17))
 	{	
 		alert("Right");
 		document.getElementById("button1").style.display = 'block' ;
@@ -89,6 +84,11 @@ function submit()
 		alert("Right");
 		document.getElementById("button1").style.display = 'block' ;
 	}
+	else if(month2<=0 && day2<=0 && year2<=0)
+	{
+		alert("Try Again");
+		document.getElementById("button1").style.display = 'none' ;
+	}	
 	else
 	{
 		alert("Try Again");
