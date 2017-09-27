@@ -1,0 +1,29 @@
+/* This Function Grabs images and acces the as an array and cycle through each picture from beginning to end by clicking on the button in my html*/
+
+var slideIndex = 1;
+
+showDivs(slideIndex);
+
+function plusDivs(n)
+{
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n)
+{
+  var i;
+  var x = document.getElementsByClassName("images");
+  if (n > x.length)
+  {
+    slideIndex=1;
+  }
+  if (n < 1)
+  {
+    slideIndex = x.length;
+  }
+  for (i = 0; i < x.length; i++)
+  {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}

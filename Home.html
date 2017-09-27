@@ -1,36 +1,28 @@
 <!DOCTYPE html>
 <html class="index">
 <head>
-<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="./assetts/css/main.css">
 	<title>The Division-Home</title>
-	<style type="text/css">
-		.edits
-		{
-			font-size: 25px;
-			color: rgb(236,107,51);
-		}
-	</style>
-
 </head>
 <body>
 <div id="container">
 		<div id="header">
 			<div id="head">
-				<img src="Logo.png" height="175">
+				<img src="assetts/img/logo/logo.png" height="175">
 			</div>
 		</div>
 		<div id="content">
 			<div id="nav">
 				<ul id="menu">
-					<mark><a href="Home.html"><li>Home</li></a></mark>
-					<a href="About.html"><li>About</li></a>
-					<a href="Map.html"><li>Map</li></a>
+					<mark><a href="home.html"><li>Home</li></a></mark>
+					<a href="about.html"><li>About</li></a>
+					<a href="map.html"><li>Map</li></a>
 					<a href="videos.html"><li>Video Gallery</li></a>
 					<a href="images.html"><li>Photo Gallery</li></a>
-					<a href="FAQ.html"><li>FAQ</li></a>
-					<a href="SocialMedia.html"><li>Social Media</li></a>
-					<a href="Contact.html"><li>Contact</li></a>
-					<a href="Buy.html"><li>Buy</li></a>
+					<a href="faq.html"><li>FAQ</li></a>
+					<a href="socialMedia.html"><li>Social Media</li></a>
+					<a href="contact.html"><li>Contact</li></a>
+					<a href="buy.html"><li>Buy</li></a>
 				</ul>
 			</div>
 
@@ -39,16 +31,16 @@
 
 				<center>
 				<div id="slideshow">
-						<img class="images" src="slideshow/img1.jpg">
-						<img class="images" src="slideshow/img2.jpg">
-						<img class="images" src="slideshow/img3.jpg">
-						<img class="images" src="slideshow/img4.jpg">
-						<img class="images" src="slideshow/img5.jpg">
-						<img class="images" src="slideshow/img6.jpg">
-						<img class="images" src="slideshow/img7.jpg">
-						<img class="images" src="slideshow/img8.png">
-						<img class="images" src="slideshow/img9.jpg">
-						<img class="images" src="slideshow/img10.jpg">
+						<img class="images" src="assetts/img/slideshow/img1.jpg">
+						<img class="images" src="assetts/img/slideshow/img2.jpg">
+						<img class="images" src="assetts/img/slideshow/img3.jpg">
+						<img class="images" src="assetts/img/slideshow/img4.jpg">
+						<img class="images" src="assetts/img/slideshow/img5.jpg">
+						<img class="images" src="assetts/img/slideshow/img6.jpg">
+						<img class="images" src="assetts/img/slideshow/img7.jpg">
+						<img class="images" src="assetts/img/slideshow/img8.png">
+						<img class="images" src="assetts/img/slideshow/img9.jpg">
+						<img class="images" src="assetts/img/slideshow/img10.jpg">
 						<button class="back" onclick="plusDivs(-1)"><</button>
 						<button class="next" onclick="plusDivs(+1)">></button>
 				</div>
@@ -64,39 +56,8 @@
 		</div>
 		<div id="footer">
 			&copy; Chapman Enterprises
-
-		</div>	
+		</div>
 </div>
-<script type="text/javascript">
-/* This Function Grabs images and acces the as an array and cycle through each picture from beginning to end by clicking on the button in my html*/
-var slideIndex = 1;
-
-showDivs(slideIndex);
-
-function plusDivs(n)
-{
-	showDivs(slideIndex += n);
-}
-
-function showDivs(n)
-{
-	var i;
-	var x = document.getElementsByClassName("images");
-	if (n > x.length)
-	{
-		slideIndex=1;
-	}
-	if (n < 1) 
-	{
-		slideIndex = x.length;
-	}
-	for (i = 0; i < x.length; i++)
-	{
-		x[i].style.display = "none";
-	}	
-	x[slideIndex-1].style.display = "block";
-}	
-</script>
-
+<script type="text/javascript" src="./assetts/scripts/slideshow.js"></script>
 </body>
 </html>

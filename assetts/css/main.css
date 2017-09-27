@@ -12,49 +12,49 @@ body
 	width:  100%;
 	height: 100%;
 	color: white;
-}	
+}
 html.index
 {
-	background-image: url("BackgroundIX.jpg");
+	background-image: url("../img/background/backgroundIX.jpg");
 	background-position: 0px 175px;
 }
 html.about
 {
-	background-image: url("BackgroundAB.jpg");
+	background-image: url("../img/background/backgroundAB.jpg");
 	background-position: 0px 0px;
 }
 html.map
 {
-	background-image: url("BackgroundMP.jpg");
+	background-image: url("../img/background/backgroundMP.jpg");
 	background-position: 0px 90px;
 }
 html.galleries
 {
-	background-image: url("BackgroundGL.jpg");
+	background-image: url("../img/background/backgroundGL.jpg");
 	background-position: 0px 25px;
 	color: black;
 }
 html.faq
 {
-	background-image: url("BackgroundFQ.jpg");
+	background-image: url("../img/background/backgroundFQ.jpg");
 	background-position: 0px 150px;
 	color: black;
 }
 html.socialmedia
 {
-	background-image: url("BackgroundSM.jpg");
+	background-image: url("../img/background/backgroundSM.jpg");
 	background-position: 0px 0px;
 	color: black;
 }
 html.contact
 {
-	background-image: url("BackgroundCT.jpg");
+	background-image: url("../img/background/backgroundCT.jpg");
 	background-position: 0px 125px;
 	color: black;
 }
 html.landing
 {
-	background-image: url("BackgroundCD.jpg");
+	background-image: url("../img/background/backgroundCD.jpg");
 	background-position: 0px 0px;
 	color: black;
 }
@@ -63,13 +63,13 @@ h1
 	color: rgb(236,107,51);
 	font-family: 'Plaster', cursive;
 	font-size: 45px;
-}	
-h2	
-{	
+}
+h2
+{
 	padding-top: 15px;
 	font-size: 30px;
 }
-h3	
+h3
 {
 	color: rgb(236,107,51);
 	font-size: 20px;
@@ -107,7 +107,7 @@ p
     animation: mymove 10s;
     animation-iteration-count: infinite;
 }
-@keyframes mymove 
+@keyframes mymove
 {
     0% {left: -15%;}
     50%{left: 45%;}
@@ -121,7 +121,7 @@ p
 	text-align: center;
 	position: fixed;
 	top: 130px;
-	z-index: 1;	
+	z-index: 1;
 	height: 55px;
 	line-height: 50px;
 	font-size: 20px;
@@ -145,7 +145,7 @@ padding-bottom: 17px;
 ul
 {
 	background-color: black;
-	margin-top:2px; 
+	margin-top:2px;
 	margin-bottom: 2px;
 }
 
@@ -169,7 +169,7 @@ ul
 }
 #footer
 {
-	
+
 	background-color: black;
 	color: orange;
 	width: 100%;
@@ -218,7 +218,7 @@ ul
 	padding-top: 25px;
 	border-style: solid;
 	height: 450px;
-	width: 450px;	
+	width: 450px;
 }
 #buttonXBOX
 {
@@ -255,7 +255,7 @@ background-color: rgb(31,106,176);
 cursor: pointer;
 }
 #trailer
-{	
+{
 	margin-top: 45px;
 	width:60%;
 	border-style: solid;
@@ -269,7 +269,7 @@ cursor: pointer;
 	border-right-color: black;
 }
 #trailer2
-{	
+{
 	margin-top: 45px;
 	width:40%;
 	border-style: solid;
@@ -284,8 +284,8 @@ cursor: pointer;
 	display: inline-block;
 }
 .images
-	{	
-		
+	{
+
 		height: 500px;
 		width: 700px;
 		transition: 3s;
@@ -294,8 +294,8 @@ cursor: pointer;
     	border-radius: 14%;
 	}
 .images2
-	{	
-		
+	{
+
 		height: 200px;
 		width: 300px;
 		transition: 3s;
@@ -304,7 +304,7 @@ cursor: pointer;
     	border-radius: 10%;
 	}
 #slideshow
-	{	
+	{
 		margin-top: 50px;
 		border-style: solid;
 		height: 500px;
@@ -318,11 +318,11 @@ cursor: pointer;
     	border-top-color: rgba(236,107,51,.5);
 		border-left-color: rgba(0,0,0,.5);
 		border-bottom-color: rgba(236,107,51,.5);
-		border-right-color: rgba(0,0,0,.5);	
+		border-right-color: rgba(0,0,0,.5);
 		border-radius: 20%;
 	}
 #slideshow2
-	{	
+	{
 		margin-top: 50px;
 		border-style: solid;
 		height: 200px;
@@ -336,7 +336,7 @@ cursor: pointer;
     	border-top-color: rgba(236,107,51,.5);
 		border-left-color: rgba(0,0,0,.5);
 		border-bottom-color: rgba(236,107,51,.5);
-		border-right-color: rgba(0,0,0,.5);	
+		border-right-color: rgba(0,0,0,.5);
 		border-radius: 22%;
 		display: inline-block;
 	}
@@ -386,3 +386,9 @@ mark
 		line-height: 50px;
 		position: absolute;
 	}
+
+      .edits
+    {
+      font-size: 25px;
+      color: rgb(236,107,51);
+    }

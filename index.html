@@ -3,7 +3,7 @@
 
 <head>
   <title>The Division-Landing Page</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="./assetts/css/main.css">
   <style type="text/css">
   input {
     width: 100px;
@@ -24,12 +24,6 @@
     width: 100px;
     background-color: rgb(236, 107, 51);
   }
-
-  input[type=button]:hover {
-    background-color: grey;
-    border: dotted;
-  }
-
   #fsubmit {
     text-align: center;
   }
@@ -42,54 +36,20 @@
 
   </style>
 </head>
-
 <body>
   <div id="sub">
     <center>
       Enter Your Birthday - Must Be 17 or Older
       <br> Month:
-      <input id="a" type="number" min="1" max="12" required> Day:
-      <input id="b" type="number" min="1" max="31" required> Year:
-      <input id="c" type="number" min="1950" max="2017" required>
+      <input id="month" type="number" min="1" max="12" required> Day:
+      <input id="day" type="number" min="1" max="31" required> Year:
+      <input id="year" type="number" min="1950" max="2017" required>
       <button onclick="submit()">Enter</button>
       <br>
       <br>
     </center>
   </div>
-
-  <body>
-    <script type="text/javascript">
-    /* This Function Grabs The Input For The Birthday and Check it to verify That you Are 17 and older*/
-    var month2, day2, year2;
-
-    function submit() {
-      setValues()
-      var a, b, c, d;
-      a = new Date();
-      var month = a.getMonth() + 1;
-      var day = a.getDate();
-      var year = a.getFullYear();
-      var todayDate = new Date(month + '/' + day + '/' + (year - 17))
-      var enteredDate = new Date(month2 + '/' + day2 + '/' + year2)
-      if (enteredDate.getTime() <= todayDate.getTime()) {
-        alert("Right");
-        location.replace('./Home.html')
-      } else {
-        alert("Try Again");
-        month2.value = "";
-        day2.value = "";
-        year2.value = "";
-      }
-w
-    }
-
-    function setValues() {
-      month2 = Number(document.getElementById("a").value);
-      day2 = Number(document.getElementById("b").value);
-      year2 = Number(document.getElementById("c").value);
-    }
-
-    </script>
+    <script type="text/javascript" src="./assetts/scripts/date_check.js"></script>
   </body>
 
 </html>
